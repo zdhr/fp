@@ -1,0 +1,11 @@
+{
+	"config": {
+		"platform": {
+			"php": "5.4"
+		}
+	},
+	"require": {
+		"tracy/tracy": "^2.3",
+		"nette/utils": "^2.3"
+	}
+}
