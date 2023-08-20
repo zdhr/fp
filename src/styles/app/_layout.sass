@@ -1,0 +1,55 @@
+html,
+body,
+	font-family: 'Open Sans', sans-serif
+	font-size: 14px
+	font-weight: $fw-normal
+	color: $dark
+	background: #fcfcfc
+
+b,
+th,
+strong,
+	font-weight: $fw-bold
+
+h1
+	margin: 0
+	padding: 20px 0
+	line-height: 40px
+	text-align: center
+	font-weight: $fw-normal
+	font-size: 24px
+
+ol,
+ul,
+	@include reset-list()
+
+.warning
+	color: orange
+
+.error,
+.invalid,
+	color: $red
+
+.message
+	margin: 50px
+	text-align: center
+	color: $medium
+
+
+.page-top
+	@include flex(space-between, center, row, wrap)
+	align-content: center
+	border-bottom: 1px solid $dark
+	background: $white
+	color: $medium
+	padding: 0 20px
+
+	.top-left,
+	.top-right,
+		gap: 20px
+
+	.top-left
+		@include flex(flex-start, center, row, nowrap)
+
+	.top-right
+		@include flex(flex-end, center, row, nowrap)

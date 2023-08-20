@@ -1,0 +1,72 @@
+@mixin border-radius-left($radius)
+	border-radius: $radius 0 0 $radius
+
+@mixin border-radius-right($radius)
+	border-radius: 0 $radius $radius 0
+
+@mixin border-radius-top($radius)
+	border-radius: $radius $radius 0 0
+
+@mixin border-radius-bottom($radius)
+	border-radius: 0 0 $radius $radius
+
+
+@mixin ellipsis($no-wrap: true)
+	@if $no-wrap
+		white-space: nowrap
+	overflow: hidden
+	-ms-overflow: ellipsis
+	-o-overflow: ellipsis
+	text-overflow: ellipsis
+
+@mixin invisible()
+	padding: 0
+	margin: 0
+	width: 0px
+	height: 0px
+	overflow: hidden
+	border: none
+
+@mixin sprite($x, $y, $width, $height, $display: block, $image: '/media/images/graphics.png')
+	display: $display
+	width: $width
+	height: $height
+	overflow: hidden
+	text-indent: -500px
+	background: url($image) no-repeat (-$x) (-$y)
+
+@mixin sprite-after($x, $y, $width, $height, $left: 0px, $image: '/media/images/web/graphics.png')
+	position: relative
+
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		left: $left
+		display: block
+		margin: -($height / 2) 0
+		width: $width
+		height: $height
+		background: url($image) no-repeat (-$x) (-$y)
+
+@mixin reset-list()
+	margin: 0
+	padding: 0
+	list-style: none
+
+@mixin reset-button()
+	background: transparent
+	border: none
+
+@mixin flex($justifyContent: flex-start, $alignItems: stretch, $direction: row, $wrap: nowrap)
+	display: flex
+	justify-content: $justifyContent
+	align-items: $alignItems
+	flex-flow: $direction $wrap
+
+@mixin flex-center($direction: row)
+	@include flex(center, center, $direction)
+
+@mixin square($size)
+	width: $size
+	height: $size

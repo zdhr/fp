@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"module": "esnext",
+		"target": "es5",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"lib": [
+			"es2021",
+			"dom"
+		],
+		"paths": {
+			"app/*": ["./src/app/*"],
+			"ui/*": ["src/ui/*"],
+			"utils/*": ["./src/utils/*"]
+		}
+	},
+	"include": [
+		"./src/**/*"
+	]
+}

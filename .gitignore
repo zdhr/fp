@@ -1,10 +1,7 @@
-*.lua
-*.sass-cache
+coverage/*
 node_modules/*
-
-www/server/temp
-www/server/vendor
 
 www/*.css
 www/*.css.map
 www/*.js
+www/*.js.LICENSE.txt

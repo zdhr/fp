@@ -1,0 +1,43 @@
+.editable
+	border-bottom: 1px solid $veryLight
+	cursor: pointer
+
+	&:hover
+		background: $veryLight
+
+.time-edit,
+	height: 20px
+
+	.time-input
+		width: 65px
+		border: none
+		outline: none !important
+		text-align: right
+		color: $green
+
+.offset-controls
+	position: relative
+
+	.controls
+		position: absolute
+		top: 0
+		right: -44px
+		width: 40px
+		height: 20px
+
+	.control
+		@include square(20px)
+		@include reset-button()
+		@include flex-center()
+		display: inline-flex
+		overflow: hidden
+		font-weight: $fw-bold
+		font-size: 1.5rem
+		background: $white
+		box-shadow: $small-box-shadow
+
+		&.set
+			color: $green
+
+		&.cancel
+			color: $red

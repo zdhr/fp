@@ -1,0 +1,151 @@
+.roster-flight
+	margin: 20px auto
+	padding: 15px
+	width: 960px
+	background: $white
+	border: 1px solid #ddd
+	box-shadow: 1px 1px 2px #ccc
+
+	&.collapsed
+		.flight-header
+			margin: 0
+			padding: 0 0 0 14px
+			border-left-width: 1px
+
+			h4
+				font-weight: $fw-normal
+
+		.flight-body
+			display: none
+
+	.flight-header
+		display: flex
+		justify-content: space-between
+		padding: 0 0 0 10px
+		margin: 0 0 20px 0
+		line-height: 25px
+		border-left: 5px solid $light
+
+		&.blue
+			border-color: $blue
+
+		&.red
+			border-color: $red
+
+		h4
+			margin: 0
+
+	.flight-toggle-button
+		@include reset-button()
+		position: relative
+		display: block
+		width: 25px
+		height: 25px
+		overflow: hidden
+		text-indent: -100px
+		text-decoration: none
+		color: $veryLight
+
+		&:hover
+			color: $green
+
+		&:before
+			content: '\025B2'
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 100%
+			line-height: 25px
+			font-size: 16px
+			text-indent: 0
+			text-align: center
+
+		&.collapsed:before
+			color: $light
+			content: '\025BC'
+
+	.flight-body-top
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	.units-selector
+		display: flex
+		padding: 0
+		background: none
+		opacity: 0.25
+
+		&:hover,
+		&.active,
+			opacity: 1
+
+.planes
+	.name,
+	.number,
+	.game-callsign,
+		margin: 0 0.5em
+
+	.number:before
+		content: '#'
+
+	.game-callsign
+		color: $light
+
+.route
+	margin: 10px 0
+	width: 100%
+
+	td,
+	th,
+		padding: 2px 5px
+		line-height: 20px
+
+		&.right
+			text-align: right
+
+	tfoot tr:first-child td,
+	tbody + tbody tr:first-child td,
+		border-top: 1px solid $veryLight
+
+	thead th
+		border-bottom: 1px solid $veryLight
+
+	tfoot td
+		font-weight: $fw-bold
+
+	.wp-number
+		width: 3%
+
+	.wp-name
+		width: 15%
+
+	.eta
+		width: 16%
+
+	.duration
+		width: 14%
+
+	.distance
+		width: 14%
+
+	.altitude
+		width: 14%
+
+	.speed
+		width: 14%
+
+	.heading
+		width: 10%
+
+	.waypoint-mark
+		@include reset-button()
+
+		&.is-marked
+			background: $blue
+			color: $white
+			font-weight: $fw-bold
+
+	.marked-waypoint-time
+		font-weight: $fw-bold

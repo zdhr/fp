@@ -1,0 +1,46 @@
+@media print
+	body
+		background: $white !important
+		color: $black !important
+
+	.error,
+	.invalid,
+	.warning,
+		color: inherit
+
+	.page-top
+		border: none !important
+
+		.mission-control,
+			display: none !important
+
+		.title-box
+			width: 100%
+
+		.units-selector
+			display: none
+
+	.weather
+		padding: 10px 20px
+		background: none
+
+	.date-time
+		padding: 10px 20px
+		background: none
+
+	.roster-flight
+		page-break-inside: avoid
+
+		margin: 20px 0
+		width: 100%
+		border: none
+		box-shadow: none
+
+		.flight-header
+			border: none
+			padding: 0
+
+		&.collapsed,
+		.toggle,
+		.units-selector,
+			display: none

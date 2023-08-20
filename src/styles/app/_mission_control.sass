@@ -1,0 +1,44 @@
+@mixin mission-button($color)
+	background: lighten($color, 5%)
+	border: 1px solid $color
+
+	&:hover
+		background: $color
+
+@keyframes pulse-opacity
+	0%
+		opacity: 1
+	50%
+		opacity: 0.5
+	100%
+		opacity: 1
+
+
+.mission-control
+	@include flex(space-between, stretch)
+	gap: 10px
+
+	button,
+	.mission-upload
+		@include reset-button()
+		white-space: nowrap
+		padding: 10px
+		line-height: 20px
+		text-align: center
+		color: $white
+
+	.demo-mission-button
+		@include mission-button($blue)
+
+	.reset-mission-button
+		@include mission-button($red)
+
+	.mission-upload
+		@include mission-button($green)
+
+		&:hover
+			cursor: pointer
+
+		&.in-progress
+			pointer-events: none
+			animation: pulse-opacity 1s infinite ease-out
