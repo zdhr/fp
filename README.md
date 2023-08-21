@@ -15,24 +15,24 @@ There is also live demo on http://zdenekhruska.cz/fp. You can load one of demo m
 ## Usage / Features
 
 ### Mission load
-![image](https://github.com/zdhr/fp/assets/2974124/2a24ecc5-a4f3-44cb-8e36-d5c3abcdf1ac)
+![image](https://github.com/zdhr/fp/assets/2974124/1dc99da7-56f0-40e0-9db8-9063c146dffa)
 
 Upload `.miz` file here or load one of hardcoded saved demo states.
 
 Changes are saved automatically in browser and loaded on next page load.
 
 ### Mission info
-![image](https://github.com/zdhr/fp/assets/2974124/9641673b-bedf-4894-98d5-a81b1746a295)
+![image](https://github.com/zdhr/fp/assets/2974124/308cc7e1-a335-4a74-a06b-3fb989723028)
 
 Date/time and weather information is visible in top bar. Mission start time can be edited here.
 
 ### Units setup
-![image](https://github.com/zdhr/fp/assets/2974124/4ef0f690-58f9-48b9-a6a6-8fd27e562fa1)
+![image](https://github.com/zdhr/fp/assets/2974124/e3c874c1-4383-4740-b69e-2217a5b3d7c0)
 
 In top right corner you can select which units you want to use.
 
 ### Fligth info & flightplan
-![image](https://github.com/zdhr/fp/assets/2974124/22ba811a-09da-447e-9c6e-b1615152162d)
+![image](https://github.com/zdhr/fp/assets/2974124/0b6fff2a-5c87-4068-8ef9-e70903d3f967)
 
 Each playable fligth from mission will get table with basic info and waypoints table.
 Headings and distances are calculated from waypoints coordinates in mission.
@@ -41,7 +41,7 @@ Used units can be changed per flight. This is useful, when there are mixed plane
 instruments in one mission and you want each flight to have navigation data in their native units.
 
 #### Preparation time
-![image](https://github.com/zdhr/fp/assets/2974124/1ccd51a0-6af3-44b0-a5fb-446499e6e172)
+![image](https://github.com/zdhr/fp/assets/2974124/f283d13b-022e-4b55-8e26-7603dbbbe648)
 
 This can be used to set how much preparation/startup/taxi time each flight needs from mission start to take off.
 This will push waypoints times to more realistic/achievable values. By default DCS assumes, that players will
@@ -49,7 +49,7 @@ take off immediately after mission start and ignores any time needed for startup
 
 
 #### Waypoint marking
-![image](https://github.com/zdhr/fp/assets/2974124/ffd830db-17b3-4eb6-a077-2e3df6917eaf)
+![image](https://github.com/zdhr/fp/assets/2974124/3e800352-10dc-46d7-824a-22002f2b04c7)
 
 You can highlight waypoint by clicking on its number.
 
